@@ -4,11 +4,11 @@ import javafx.scene.image.Image;
 import java.util.Arrays;
 import java.util.List;
 
-public class Card {
+public class Carta {
     private String suit;
     private String nomeAnimal;
 
-    public Card(String suit, String nomeAnimal) {
+    public Carta(String suit, String nomeAnimal) {
         setSuit(suit);
         setnomeAnimal(nomeAnimal);
     }
@@ -57,12 +57,12 @@ public class Card {
 
     public String toString()
     {
-        return nomeAnimal + " de " + suit;
+        return suit + " de " + nomeAnimal;
     }
 
     public String getColour()
     {
-        if (suit.equals("cachorro") || suit.equals("gato"))
+        if (nomeAnimal.equals("cachorro") || nomeAnimal.equals("gato"))
             return "red";
         else
             return "black";
@@ -74,16 +74,17 @@ public class Card {
     }
 
     /**
-     * This method will return an Image that represents the Card
+     * Vai retornar a imagem que representa a carta
      */
     public Image getImage()
     {
         String pathName = "images/"+suit+nomeAnimal+".png";
-        return new Image(Card.class.getResourceAsStream(pathName));
+        return new Image(Carta.class.getResourceAsStream(pathName));
     }
 
     public Image getVersoCarta()
     {
-        return new Image(Card.class.getResourceAsStream("images/interrogacao.png"));
+        return new Image(Carta.class.getResourceAsStream("images/interrogacao.png"));
     }
 }
+

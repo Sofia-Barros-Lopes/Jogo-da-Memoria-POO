@@ -4,36 +4,29 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class DeckOfCards {
-    private ArrayList<Card> deck;
+public class DeckDeCartas {
+    private ArrayList<Carta> deck;
 
-    public DeckOfCards() {
+    public DeckDeCartas() {
         this.deck = new ArrayList<>();
-        List<String> suits = Card.getValidSuits();
-        List<String> nomeAnimal = Card.getValidnomeAnimal();
+        List<String> suits = Carta.getValidSuits();
+        List<String> nomeAnimal = Carta.getValidnomeAnimal();
 
         for (String suit : suits)
         {
             for (String faceName : nomeAnimal)
             {
-                deck.add(new Card(suit,faceName));
+                deck.add(new Carta(suit,faceName));
             }
         }
     }
 
-    /**
-     * This method will shuffle the card objects
-     */
     public void shuffle()
     {
         Collections.shuffle(deck);
     }
 
-    /**
-     * This method will return the top card from the deck.
-     * If the deck is empty, it will return null
-     */
-    public Card dealTopCard()
+    public Carta dealTopCarta()
     {
         if (deck.size()>0)
             return deck.remove(0);
@@ -41,7 +34,7 @@ public class DeckOfCards {
             return null;
     }
 
-    public int getNumOfCards()
+    public int getNumOfCartas()
     {
         return deck.size();
     }

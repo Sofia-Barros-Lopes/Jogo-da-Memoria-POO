@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="716.0" prefWidth="1050.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.memorygame.MemoryGameController">
+<AnchorPane prefHeight="716.0" prefWidth="1050.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.memorygame.PrimaryController">
    <children>
       <VBox alignment="TOP_CENTER" layoutX="413.0" layoutY="139.0" prefHeight="668.0" prefWidth="1000.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -179,7 +179,7 @@
                         <Label fx:id="correctGuessesLabel" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                      </children>
                   </GridPane>
-                  <Button mnemonicParsing="false" onAction="#playAgain" onMouseClicked="#playAgain" prefWidth="200.0" text="Play Again" />
+                  <Button mnemonicParsing="false" onAction="#playAgain" onMouseClicked="#playAgain" prefWidth="200.0" text="Recomeçar" />
                   <ImageView fitHeight="108.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@logo.png" />
