@@ -175,8 +175,8 @@
                      <children>
                         <Label prefHeight="47.0" prefWidth="191.0" text="Tentativas:" />
                         <Label text="Acertos:" GridPane.rowIndex="1" />
-                        <Label fx:id="guessLabel" prefHeight="47.0" prefWidth="1.0" text="0" GridPane.columnIndex="1" />
-                        <Label fx:id="correctGuessesLabel" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="tentativasLabel" prefHeight="47.0" prefWidth="1.0" text="0" GridPane.columnIndex="1" />
+                        <Label fx:id="acertosLabel" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                      </children>
                   </GridPane>
                   <Button mnemonicParsing="false" onAction="#playAgain" onMouseClicked="#playAgain" prefWidth="200.0" text="Recomeçar" />
